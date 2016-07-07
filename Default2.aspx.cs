@@ -32,6 +32,7 @@ public partial class Default2 : System.Web.UI.Page
             gvr.Cells[5].Visible = false;
         }
 
+        //TODO: Response.Redirect("afd.aspx");
 
 
     }
