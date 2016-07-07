@@ -14,14 +14,16 @@ public partial class Default2 : System.Web.UI.Page
         //s.Add("a");
         s.Add("/images/1.jpg");
         DataTable dt = new DataTable();
-        dt.Columns.Add("Value");
         dt.Columns.Add("otra");
+        dt.Columns.Add("Value");
+        dt.Columns.Add("Cant");
         DataRow dr = dt.NewRow();
         dr["otra"] = "dato x";
         dr["Value"] = "/images/1.jpg";
-
+        dr["Cant"] = "1";
         dt.Rows.Add(dr);
         GridView1.DataSource = dt;
+        TextBox tb = new TextBox();
         GridView1.DataBind();
     }
 }
