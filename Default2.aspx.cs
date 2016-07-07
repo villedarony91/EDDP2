@@ -25,5 +25,14 @@ public partial class Default2 : System.Web.UI.Page
         GridView1.DataSource = dt;
         TextBox tb = new TextBox();
         GridView1.DataBind();
+
+        GridView1.HeaderRow.Cells[0].Visible = false;
+        foreach (GridViewRow gvr in GridView1.Rows)
+        {
+            gvr.Cells[5].Visible = false;
+        }
+
+
+
     }
 }

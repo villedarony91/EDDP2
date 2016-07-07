@@ -41,24 +41,15 @@
                 <Columns>
                     <asp:CommandField ShowSelectButton="True" />
                      <asp:ImageField DataImageUrlField="Value" ControlStyle-Width="100" ControlStyle-Height="100" HeaderText="My Image">
-<ControlStyle Height="100px" Width="100px"></ControlStyle>
+                                <ControlStyle Height="100px" Width="100px"></ControlStyle>
                     </asp:ImageField>
-                    <asp:BoundField DataField="Cant" ReadOnly="False"/>
-                    <asp:TemplateField HeaderText="Qty">
-
-<ItemTemplate>
-
-<asp:TextBox ID="tbQty" runat="server" Width="25px"
-
-MaxLength="3" />
-
-</ItemTemplate>
-
-<ItemStyle Width="25px" HorizontalAlign="Center"/>
-
-</asp:TemplateField>
-                </Columns>
-                <FooterStyle BackColor="#C6C3C6" ForeColor="Black" />
+                        <asp:BoundField DataField="Cant" ReadOnly="False"/>
+                        <asp:TemplateField HeaderText="Cantidad">
+                            <ItemTemplate><asp:TextBox ID="tbQty" runat="server" Width="25px" MaxLength="3" /></ItemTemplate>
+                             <ItemStyle Width="25px" HorizontalAlign="Center"/>
+                             </asp:TemplateField>
+                    </Columns>
+                    <FooterStyle BackColor="#C6C3C6" ForeColor="Black" />
                 <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#E7E7FF" />
                 <PagerStyle BackColor="#C6C3C6" ForeColor="Black" HorizontalAlign="Right" />
                 <RowStyle BackColor="#DEDFDE" ForeColor="Black" />
