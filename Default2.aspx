@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master.master.cs" Inherits="Master" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default2.aspx.cs" Inherits="Default2" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <form id="form1" runat="server">
     <div id="topheader"></div>
     <div id="main_container">
 
@@ -36,6 +37,14 @@
         <div id="center_content">
 
 
+            <asp:GridView ID="GridView1" runat="server">
+                <Columns>
+                    <asp:CommandField ShowSelectButton="True" />
+                     <asp:ImageField DataImageUrlField="Value" ControlStyle-Width="100" ControlStyle-Height="100" HeaderText="My Image"  />
+                </Columns>
+            </asp:GridView>
+
+
         </div>
 
         <div id="footer">
@@ -54,6 +63,8 @@
         </div>
 
     </div>
+
+    </form>
 
 </body>
 </html>
