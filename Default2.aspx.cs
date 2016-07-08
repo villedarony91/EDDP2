@@ -31,15 +31,9 @@ public partial class Default2 : System.Web.UI.Page
                 gvr.Cells[5].Visible = false;
             }
         }
-
-
-        //TODO: Response.Redirect("afd.aspx");
-
-
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
-
             TextBox tb = GridView1.SelectedRow.FindControl("tbQty") as TextBox;
             string s = tb.Text;
     }
